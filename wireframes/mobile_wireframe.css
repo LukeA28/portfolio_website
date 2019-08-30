@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+}
+
+body {
+    display: inline-block;
+    /*background-color: #546F8F;*/
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+    width: 66%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*background-color: #7C565B;*/
+    padding: 10px;
+    margin-top: 0px;
+}
+
+header a {
+    text-decoration: none;
+    /*color: #ebebeb;*/
+}
+
+main {
+    display: block;
+    /*color: #ebebeb;*/
+    line-height: 20pt;
+    font-size: 10px;
+}
+
+section {
+    width: 90%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #7C565B;*/
+    /*border: 3px solid #637c99;*/
+    box-shadow: 2em;
+}
+
+hr {
+    width: 90%;
+}
+
+.toggle_links {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 10px;
+    /*color: #ebebeb;*/
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.toggle_link {
+    text-decoration: none;
+}
+
+.hero {
+    margin-top: 50px;
+    display: flex;
+}
+
+.hero_text {
+    width: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.hero_text_name {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.hero_photo {
+    margin: 10px;
+}
+
+.headers {
+    text-align: center;
+}
+
+.bio {
+    display: block;
+}
+
+.bio_top {
+    display: flex;
+    background-color: 
+}
+
+.bio_title {
+    width: 15%;
+    text-align: center;
+    /*border: 3px solid #ebebeb;*/
+    padding: 10px;
+    margin-left: 12px;
+    padding-bottom: 5px;
+}
+
+.bio_technical {
+    width: 80%;
+    padding-left: 2em;
+}
+
+.bio_personal {
+    margin: 10px;
+}
+
+.portfolio {
+    display: block;
+}
+
+.portfolio_title {
+    text-align: center;
+}
+
+.app_separater {
+    display: flex;
+    margin: 5px;
+    width: 90%;
+}
+
+.app_text {
+    width: 40%;
+    margin: 10px;
+}
+
+.app_screenshot {
+    width: 165px;
+    height: 165px;
+    margin: 10px;
+}
+
+footer {
+    width: 66%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: #7C565B;*/
+    position: absolute;
+    right: 0;
+    margin-right: none;
+    font-size: 0.7em;
+}
+
+footer h2 {
+    font-size: 0.8em;
+    padding-left: 10px;
+    /*color: #ebebeb;*/
+}
