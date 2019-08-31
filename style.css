@@ -10,6 +10,8 @@ body {
     display: inline-block;
     background-color: #546F8F;
     font-family: 'Lexend Deca', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
@@ -165,7 +167,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #7C565B;
-    float: right;
+    position: absolute;
+    right: 0;
     margin: 0px;
     border-radius: 7px 0px 0px 0px;
     border: 3px solid #637c99;
@@ -362,7 +365,6 @@ footer h2 {
         justify-content: space-around;
         align-items: center;
         background-color: #7C565B;
-        position: absolute;
         margin-right: none;
     }
     
