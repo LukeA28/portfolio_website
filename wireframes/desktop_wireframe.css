@@ -78,7 +78,7 @@ hr {
 .hero_text_name {
     width: 30%;
     text-align: center;
-    font-size: 4em;
+    font-size: 4.5em;
     line-height: 2.2em;
     border: 3px solid black;
     margin-left: 0.4em;
@@ -87,9 +87,9 @@ hr {
 .hero_text_paragraph {
     padding: 3px;
     padding-left: 25px;
-    font-size: 3.3em;
+    font-size: 3.8em;
     width: 65%;
-    line-height: 1.7em;
+    line-height: 2em;
 }
 
 .hero_photo {

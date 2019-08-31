@@ -1,0 +1,586 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+body {
+    display: inline-block;
+    background-color: #546F8F;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+    width: 66%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #7C565B;
+    padding: 0px 10px;
+    margin-top: 0px;
+    font-size: 1em;
+    border-radius: 0px 0px 7px 0px;
+    border: 3px solid #637c99;
+    font-weight: 2em;
+}
+
+header a {
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 10px;
+
+}
+
+.initials {
+    border: 1px solid #637c99;
+    margin: 5px;
+    border-radius: 25%;
+    background-color: #546F8F;
+}
+
+header:nth-last-child() {
+    margin-right: 2em;
+}
+
+main {
+    display: block;
+    color: #ebebeb;
+    line-height: 20pt;
+    font-size: 12px;
+    width: 100%;
+    padding: none;
+    margin: none;
+    border: none;
+}
+
+section {
+    width: 90%;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(124,86,91,0.9);
+    border: 3px solid #637c99;
+    box-shadow: 2em;
+}
+
+hr {
+    width: 90%;
+}
+
+.hero {
+    margin-top: 50px;
+    display: flex;
+}
+
+.hero_text {
+    width: 50%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.hero_text_name {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.hero_text_paragraph {
+    padding: 3px;
+    padding-left: 25px;
+    font-size: 1.3em;
+}
+
+.hero_photo {
+    margin: 10px;
+    margin-left: 2.4em;
+    margin-right: 0.2em;
+    float: right;
+}
+
+.headers {
+    text-align: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2em;
+    padding: 6px;
+}
+
+.description {
+    text-justify: auto;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.portfolio {
+    display: block;
+}
+
+.app_title {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.app_separater {
+    display: block;
+    margin: 5px;
+    width: 90%;
+}
+
+.app_text {
+    display: flex;
+    font-size: 1.3em;
+}
+
+.description {
+    font-size: 1.3em;
+}
+
+.app_screenshot {
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+.app_techs {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+footer {
+    width: 66%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7C565B;
+    position: absolute;
+    right: 0;
+    margin-right: none;
+    border-radius: 7px 0px 0px 0px;
+    border: 3px solid #637c99;
+}
+
+footer h2 {
+    font-size: 1em;
+    padding-left: 10px;
+    color: #ebebeb;
+}
+
+@media screen and (min-width: 550px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: inline-block;
+        background-color: #546F8F;
+        font-family: 'Lexend Deca', sans-serif;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    
+    header {
+        width: 100%;
+        align-self: center;
+        left: none;
+        margin-top: 0px;
+        font-size: 1.6em;
+        margin-right: 15%;
+        margin-left: 15%;
+        border-radius: 0px 0px 5px 0px;
+        border: 3px solid #637c99;
+    }
+    
+    main {
+        display: block;
+        color: #ebebeb;
+        line-height: 20pt;
+        font-size: 12px;
+    }
+    
+    section {
+        width: 90%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #7C565B;
+        border: 3px solid #637c99;
+        box-shadow: 2em;
+    }
+    
+    hr {
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .hero {
+        margin-top: 100px;
+        display: flex;
+        padding: 1em;
+    }
+    
+    .hero_text {
+        width: 70%;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .hero_text_name {
+        width: 30%;
+        text-align: center;
+        font-size: 3.3em;
+        line-height: 2.2em;
+        border: 3px solid black;
+        margin-left: 0.4em;
+    }
+    
+    .hero_text_paragraph {
+        padding: 3px;
+        padding-left: 25px;
+        font-size: 2.6em;
+        width: 65%;
+        line-height: 1.7em;
+    }
+    
+    .hero_photo {
+        margin: 10px;
+        margin-left: 2.4em;
+        width: 14em;
+        height: 21em;
+    }
+    
+    .headers {
+        text-align: center;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 4em;
+        padding: 0.7em;
+    }
+    
+    .bio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .bio_top {
+        display: flex;
+        margin: 3px;
+    }
+    
+    .bio_title {
+        width: 20%;
+        text-align: center;
+        border: 3px solid #ebebeb;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-right: 25px;
+        padding-top: 5em;
+        border-right: 3px solid black;
+        font-size: 3em;
+    }
+    
+    .bio_technical {
+        padding-left: 2em;
+        padding: 10px;
+        padding-right: 20px;
+        margin: 3px;
+        font-size: 2.3em;
+        line-height: 1.5em;
+        border-right: 3px solid black;
+    }
+    
+    .bio_bottom {
+        margin: 3px;
+        margin-left: 10px;
+    }
+    
+    .bio_personal {
+        padding: 5px;
+        margin: 3px;
+        font-size: 2.3em;
+        line-height: 1.5em;
+    }
+    
+    .portfolio {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .app_title {
+        text-align: center;
+        font-size: 2.6em;
+    }
+    
+    .app_separater {
+        display: block;
+        margin: 5px;
+        width: 90%;
+    }
+    
+    .app_text {
+        display: flex;
+        font-size: 2.3em;
+        line-height: 1.5em;
+        padding: 1em;
+    }
+    
+    .app_screenshot {
+        float: right;
+        height: 7em;
+        width: 7em;
+        padding: 0.7em;
+    }
+    
+    .app_techs {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        font-size: 2.3em;
+        padding: 1em;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7C565B;
+        position: absolute;
+        margin-right: none;
+    }
+    
+    footer h2 {
+        font-size: 1.4em;
+        padding-left: 10px;
+        color: #ebebeb;
+    }
+}
+
+@media screen and (min-width: 1425px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: block;
+        background-color: #546F8F;
+        font-family: 'Lexend Deca', sans-serif;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    
+    header {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        background-color: #7C565B;
+        padding: 0px 10px;
+        margin-top: 0px;
+        font-size: 2em;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 0px 0px 7px 7px; 
+        box-shadow: none;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: black;
+        color: #ebebeb;
+    }
+    
+    header :nth-last-child() {
+        margin-right: 2em;
+    }
+    
+    main {
+        display: block;
+        color: #ebebeb;
+        line-height: 20pt;
+        font-size: 12px;
+    }
+    
+    section {
+        width: 70%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color: #7C565B;
+        border: 3px solid #637c99;
+        box-shadow: 2em;
+    }
+    
+    hr {
+        width: 70%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .hero {
+        margin-top: 150px;
+        display: flex;
+        padding: 1em;
+    }
+    
+    .hero_text {
+        width: 70%;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .hero_text_name {
+        width: 30%;
+        text-align: center;
+        font-size: 4.5em;
+        line-height: 2.2em;
+        border: 3px solid black;
+        margin-left: 0.4em;
+    }
+    
+    .hero_text_paragraph {
+        padding: 3px;
+        padding-left: 25px;
+        font-size: 3.8em;
+        width: 65%;
+        line-height: 2em;
+    }
+    
+    .hero_photo {
+        margin: 10px;
+        margin-left: 2.4em;
+        width: 17em;
+        height: 25em;
+    }
+    
+    .headers {
+        text-align: center;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 4em;
+        padding: 0.7em;
+    }
+    
+    .bio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .bio_top {
+        display: flex;
+        margin: 3px;
+    }
+    
+    .bio_title {
+        width: 20%;
+        text-align: center;
+        border: 3px solid #ebebeb;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-right: 25px;
+        padding-top: 1.5em;
+        border-right: 3px solid black;
+        font-size: 4em;
+    }
+    
+    .bio_technical {
+        padding-left: 2em;
+        padding: 10px;
+        padding-right: 20px;
+        margin: 3px;
+        font-size: 2.3em;
+        line-height: 1.5em;
+        border-right: 3px solid black;
+    }
+    
+    .bio_bottom {
+        margin: 3px;
+        margin-left: 10px;
+    }
+    
+    .bio_personal {
+        padding: 5px;
+        margin: 3px;
+        font-size: 2.3em;
+        line-height: 1.5em;
+    }
+    
+    .portfolio {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .app_title {
+        text-align: center;
+        font-size: 3.5em;
+    }
+    
+    .app_separater {
+        display: block;
+        margin: 5px;
+        width: 90%;
+    }
+    
+    .app_text {
+        display: flex;
+        font-size: 2.3em;
+        line-height: 2.3em;
+        padding: 1em;
+    }
+    
+    .app_screenshot {
+        float: right;
+        height: 7em;
+        width: 7em;
+        padding: 0.7em;
+    }
+    
+    .app_techs {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        font-size: 2.3em;
+        padding: 1em;
+    }
+    
+    footer {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #7C565B;
+        position: absolute;
+        margin-left: 15%;
+    }
+    
+    footer h2 {
+        font-size: 2em;
+        padding-left: 10px;
+        color: #ebebeb;
+    }
+}
