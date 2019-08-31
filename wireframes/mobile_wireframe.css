@@ -16,12 +16,17 @@ header {
     width: 66%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: fixed;
     left: 0;
     top: 0;
     /*background-color: #7C565B;*/
-    padding: 10px;
+    background-color: #808080;
+    padding: 0px 10px;
     margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 1em;
+
 }
 
 header a {
@@ -33,7 +38,7 @@ main {
     display: block;
     /*color: #ebebeb;*/
     line-height: 20pt;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 section {
@@ -45,29 +50,12 @@ section {
     margin-left: auto;
     /*background-color: #7C565B;*/
     /*border: 3px solid #637c99;*/
+    background-color: #a8a8a8;
     box-shadow: 2em;
 }
 
 hr {
     width: 90%;
-}
-
-.toggle_links {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-    padding: 10px;
-    /*color: #ebebeb;*/
-    text-decoration: none;
-    font-size: 10px;
-}
-
-.toggle_link {
-    text-decoration: none;
 }
 
 .hero {
@@ -79,6 +67,7 @@ hr {
     width: 50%;
     display: inline-block;
     margin: 10px;
+    background-color: #c8c8c8;
 }
 
 .hero_text_name {
@@ -86,14 +75,31 @@ hr {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    font-size: 1.6em;
+}
+
+.hero_text_paragraph {
+    padding: 3px;
+    padding-left: 25px;
+    font-size: 1.3em;
 }
 
 .hero_photo {
     margin: 10px;
+    margin-left: 2.4em;
+    margin-right: 0.2em;
+    float: right;
+    background-color: #c8c8c8;
 }
 
 .headers {
     text-align: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #a8a8a8;
+    font-size: 2em;
+    padding: 6px;
 }
 
 .bio {
@@ -102,50 +108,78 @@ hr {
 
 .bio_top {
     display: flex;
-    background-color: 
+    background-color: #c8c8c8;
+    margin: 3px;
 }
 
 .bio_title {
     width: 15%;
     text-align: center;
     /*border: 3px solid #ebebeb;*/
+    border: 2px solid #808080;
     padding: 10px;
-    margin-left: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
     padding-bottom: 5px;
+    background-color: #e8e8e8;
+    height: 15em;
 }
 
 .bio_technical {
     width: 80%;
     padding-left: 2em;
+    background-color: #e8e8e8;
+    padding: 5px;
+    margin: 3px;
+    font-size: 1.3em;
+}
+
+.bio_bottom {
+    background-color: #c8c8c8;
+    margin: 3px;
+    margin-left: 10px;
+    width: 95%;
+    font-size: 1.3em;
 }
 
 .bio_personal {
-    margin: 10px;
+    width: 100%;
+    padding: 5px;
+    margin: 3px;
+    background-color: #e8e8e8;
 }
 
 .portfolio {
     display: block;
 }
 
-.portfolio_title {
+.app_title {
     text-align: center;
+    font-size: 1.6em;
 }
 
 .app_separater {
-    display: flex;
+    display: block;
     margin: 5px;
     width: 90%;
 }
 
 .app_text {
-    width: 40%;
-    margin: 10px;
+    display: flex;
+    font-size: 1.3em;
 }
 
 .app_screenshot {
-    width: 165px;
-    height: 165px;
-    margin: 10px;
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+.app_techs {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    font-size: 1.3em;
 }
 
 footer {
@@ -154,14 +188,14 @@ footer {
     justify-content: space-around;
     align-items: center;
     /*background-color: #7C565B;*/
+    background-color: #808080;
     position: absolute;
     right: 0;
     margin-right: none;
-    font-size: 0.7em;
 }
 
 footer h2 {
-    font-size: 0.8em;
+    font-size: 1em;
     padding-left: 10px;
     /*color: #ebebeb;*/
 }
