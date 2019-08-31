@@ -165,10 +165,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #7C565B;
-    position: absolute;
-    right: 0;
-    margin-right: 0%;
-    padding-right: none;
+    float: right;
+    margin: 0px;
     border-radius: 7px 0px 0px 0px;
     border: 3px solid #637c99;
 }
