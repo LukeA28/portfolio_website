@@ -399,16 +399,6 @@ footer h2 {
         margin-right: 15%;
     }
     
-    header a {
-        text-decoration: none;
-        /*color: black;*/
-        /*color: #ebebeb;*/
-    }
-    
-    header :nth-last-child() {
-        margin-right: 2em;
-    }
-    
     main {
         display: block;
         /*color: #ebebeb;*/
@@ -539,6 +529,7 @@ footer h2 {
         position: absolute;
         right: unset;
         margin-left: 15%;
+        margin-right: 15%;
     }
     
     footer h2 {
