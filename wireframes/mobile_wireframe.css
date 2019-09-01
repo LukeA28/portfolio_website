@@ -10,28 +10,78 @@ body {
     display: inline-block;
     /*background-color: #546F8F;*/
     font-family: 'Lexend Deca', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
-    width: 66%;
+    width: 10%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-items: center;
     position: fixed;
     left: 0;
     top: 0;
+    background-color: #999999;
     /*background-color: #7C565B;*/
-    background-color: #808080;
     padding: 0px 10px;
     margin-top: 0px;
-    margin-bottom: 5px;
     font-size: 1em;
-
+    border-radius: 0px 0px 7px 0px;
+    /*border: 3px solid #637c99;*/
+    font-weight: 2em;
 }
 
-header a {
-    text-decoration: none;
-    /*color: #ebebeb;*/
+button {
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+button > image {
+    background-color: #999999;
+}
+
+.menu {
+    background-color: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    margin-left: 0px;
+}
+
+.hamburger_image {
+    width: 25px;
+    height: 25px;
+    background-color: #999999;
+}
+
+.menu_view {
+    width: 100%;
+    display: none;
+}
+
+.nav {
+    width: 90%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #999999;
+}
+
+.nav_toggle {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin: none;
+    padding: none;
+    background-color: #999999;
+}
+
+header:nth-last-child() {
+    margin-right: 2em;
 }
 
 main {
@@ -39,6 +89,10 @@ main {
     /*color: #ebebeb;*/
     line-height: 20pt;
     font-size: 12px;
+    width: 100%;
+    padding: none;
+    margin: none;
+    border: none;
 }
 
 section {
@@ -48,9 +102,9 @@ section {
     margin-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
-    /*background-color: #7C565B;*/
+    background-color: #777777;
+    /*background-color: rgba(124,86,91,0.9);*/
     /*border: 3px solid #637c99;*/
-    background-color: #a8a8a8;
     box-shadow: 2em;
 }
 
@@ -67,7 +121,6 @@ hr {
     width: 50%;
     display: inline-block;
     margin: 10px;
-    background-color: #c8c8c8;
 }
 
 .hero_text_name {
@@ -89,7 +142,6 @@ hr {
     margin-left: 2.4em;
     margin-right: 0.2em;
     float: right;
-    background-color: #c8c8c8;
 }
 
 .headers {
@@ -97,56 +149,14 @@ hr {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #a8a8a8;
     font-size: 2em;
     padding: 6px;
 }
 
-.bio {
-    display: block;
-}
-
-.bio_top {
-    display: flex;
-    background-color: #c8c8c8;
-    margin: 3px;
-}
-
-.bio_title {
-    width: 15%;
-    text-align: center;
-    /*border: 3px solid #ebebeb;*/
-    border: 2px solid #808080;
+.description {
+    text-justify: auto;
     padding: 10px;
-    margin-left: 8px;
-    margin-right: 8px;
-    padding-bottom: 5px;
-    background-color: #e8e8e8;
-    height: 15em;
-}
-
-.bio_technical {
-    width: 80%;
-    padding-left: 2em;
-    background-color: #e8e8e8;
-    padding: 5px;
-    margin: 3px;
     font-size: 1.3em;
-}
-
-.bio_bottom {
-    background-color: #c8c8c8;
-    margin: 3px;
-    margin-left: 10px;
-    width: 95%;
-    font-size: 1.3em;
-}
-
-.bio_personal {
-    width: 100%;
-    padding: 5px;
-    margin: 3px;
-    background-color: #e8e8e8;
 }
 
 .portfolio {
@@ -169,6 +179,10 @@ hr {
     font-size: 1.3em;
 }
 
+.description {
+    font-size: 1.3em;
+}
+
 .app_screenshot {
     float: right;
     height: 100px;
@@ -183,19 +197,363 @@ hr {
 }
 
 footer {
-    width: 66%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #999999;
     /*background-color: #7C565B;*/
-    background-color: #808080;
     position: absolute;
     right: 0;
-    margin-right: none;
+    margin: 0px;
+    border-radius: 7px 0px 0px 0px;
+    /*border: 3px solid #637c99;*/
 }
 
 footer h2 {
     font-size: 1em;
     padding-left: 10px;
     /*color: #ebebeb;*/
+}
+
+@media screen and (min-width: 550px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: inline-block;
+        /*background-color: #546F8F;*/
+        font-family: 'Lexend Deca', sans-serif;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    
+    header {
+        display: none;
+    }
+
+    .menu_view {
+        display: block;
+        width: 100%;
+    }
+
+    .nav {
+        width: 100%;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    
+    main {
+        display: block;
+        /*color: #ebebeb;*/
+        line-height: 20pt;
+        font-size: 12px;
+    }
+    
+    section {
+        width: 90%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        /*background-color: #7C565B;*/
+        /*border: 3px solid #637c99;*/
+        box-shadow: 2em;
+    }
+    
+    hr {
+        width: 90%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .hero {
+        margin-top: 120px;
+        display: flex;
+        padding: 1em;
+    }
+    
+    .hero_text {
+        width: 70%;
+        display: flex;
+    }
+    
+    .hero_text_name {
+        text-align: center;
+        font-size: 50px;
+        line-height: 2.2em;
+        /*border: 3px solid black;*/
+        padding: 15px;
+    }
+    
+    .hero_text_paragraph {
+        font-size: 36px;
+        line-height: 80px;
+        padding: 15px;
+    }
+    
+    .hero_photo {
+        margin: 10px;
+        margin-left: 2.4em;
+        width: 14em;
+        height: 21em;
+    }
+    
+    .headers {
+        text-align: center;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 4em;
+        padding: 0.7em;
+    }
+    
+    .bio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .description {
+        font-size: 28px;
+        padding: 15px 30px;
+        line-height: 45px;
+    }
+    
+    .portfolio {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .app_title {
+        text-align: center;
+        font-size: 34px;
+    }
+    
+    .app_separater {
+        display: block;
+        margin: 5px;
+        width: 100%;
+    }
+    
+    .app_text {
+        display: flex;
+        font-size: 28px;
+        line-height: 45px;
+        padding: 15px 30px;
+    }
+    
+    .app_screenshot {
+        float: right;
+        height: 7em;
+        width: 7em;
+        padding: 0.7em;
+    }
+    
+    .app_techs {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        padding: 1em;
+    }
+    
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0px;
+        /*background-color: #7C565B;*/
+        margin-right: none;
+    }
+    
+    footer h2 {
+        font-size: 20px;
+        padding-left: 10px;
+        /*color: #ebebeb;*/
+    }
+}
+
+@media screen and (min-width: 1425px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: block;
+        /*background-color: #546F8F;*/
+        font-family: 'Lexend Deca', sans-serif;
+        width: 100%;
+        margin: none;
+        padding: none;
+    }
+    
+    header {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        /*background-color: #7C565B;*/
+        padding: 0px 10px;
+        margin-top: 0px;
+        font-size: 2em;
+        margin-left: 15%;
+        margin-right: 15%;
+        border-radius: 0px 0px 7px 7px; 
+        box-shadow: none;
+    }
+    
+    header a {
+        text-decoration: none;
+        /*color: black;*/
+        /*color: #ebebeb;*/
+    }
+    
+    header :nth-last-child() {
+        margin-right: 2em;
+    }
+    
+    main {
+        display: block;
+        /*color: #ebebeb;*/
+        line-height: 20pt;
+        font-size: 12px;
+    }
+    
+    section {
+        width: 70%;
+        padding: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 15%;
+        margin-left: 15%;
+        /*background-color: #7C565B;*/
+        /*border: 3px solid #637c99;*/
+        box-shadow: 2em;
+    }
+    
+    hr {
+        width: 70%;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .hero {
+        margin-top: 150px;
+        display: flex;
+        padding: 1em;
+    }
+    
+    .hero_text {
+        width: 70%;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .hero_text_name {
+        width: 30%;
+        text-align: center;
+        font-size: 4.5em;
+        line-height: 2.2em;
+        /*border: 3px solid black;*/
+        margin-left: 0.4em;
+    }
+    
+    .hero_text_paragraph {
+        padding: 3px;
+        padding-left: 25px;
+        font-size: 3.8em;
+        width: 65%;
+        line-height: 2em;
+    }
+    
+    .hero_photo {
+        margin: 10px;
+        margin-left: 2.4em;
+        width: 17em;
+        height: 25em;
+    }
+    
+    .headers {
+        text-align: center;
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 4em;
+        padding: 0.7em;
+    }
+    
+    .bio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .description {
+        font-size: 32px;
+        line-height: 60px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .portfolio {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .app_title {
+        text-align: center;
+        font-size: 3.5em;
+    }
+    
+    .app_separater {
+        display: block;
+        margin: 5px;
+        width: 90%;
+    }
+    
+    .app_text {
+        display: flex;
+        font-size: 2.3em;
+        line-height: 2.3em;
+        padding: 1em;
+    }
+    
+    .app_screenshot {
+        float: right;
+        height: 7em;
+        width: 7em;
+        padding: 0.7em;
+    }
+    
+    .app_techs {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        padding-left: 65px;
+    }
+    
+    footer {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /*background-color: #7C565B;*/
+        position: absolute;
+        right: unset;
+        margin-left: 15%;
+    }
+    
+    footer h2 {
+        font-size: 2em;
+        padding-left: 10px;
+        /*color: #ebebeb;*/
+    }
 }
