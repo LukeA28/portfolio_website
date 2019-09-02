@@ -201,6 +201,10 @@ hr {
     border-radius: 10px 10px 10px 10px;
 }
 
+.tech_divide {
+    width: 50%;
+}
+
 .app_techs {
     display: flex;
     justify-content: space-around;
@@ -208,6 +212,10 @@ hr {
     text-align: center;
     width: 100%;
     font-size: 12pt;
+}
+
+.app_techs img:hover {
+    cursor: unset;
 }
 
 footer {
@@ -235,94 +243,78 @@ footer h2 {
     padding-top: 5px;
 }
 
-.icon::hover {
-    cursor: grab;
+.icon:hover {
+    cursor: pointer;
 }
 
-@media screen and (min-width: 550px) {
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        display: inline-block;
-        /*background-color: #546F8F;*/
-        font-family: 'Lexend Deca', sans-serif;
-        width: 100%;
-        margin: none;
-        padding: none;
-    }
-    
+@media screen and (min-width: 600px) {
+
     header {
         display: none;
     }
 
     .menu_view {
-        display: block;
-        width: 100%;
+        display: flex;
     }
 
     .nav {
+        display: flex;
         width: 100%;
-        font-size: 30px;
+        font-size: 30pt;
         text-decoration: none;
+        height: 80px;
+        border-radius: 0px 0px 0px 0px;
+        border-right: none;
     }
-    
-    main {
-        display: block;
-        /*color: #ebebeb;*/
-        line-height: 20pt;
-        font-size: 12px;
+
+    .nav_toggle {
+        display: flex;
+        align-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: none;
     }
     
     section {
-        width: 90%;
-        padding: 5px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        /*background-color: #7C565B;*/
-        /*border: 3px solid #637c99;*/
-        box-shadow: 2em;
+        width: 80%;
+        border-radius: 15px 15px 15px 15px;
     }
     
     hr {
-        width: 90%;
+        width: 80%;
         margin-top: 35px;
         margin-bottom: 35px;
+        border-radius: 15px 15px 15px 15px;
     }
     
     .hero {
         margin-top: 120px;
         display: flex;
-        padding: 1em;
     }
-    
+
     .hero_text {
-        width: 70%;
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero_text_name {
         text-align: center;
-        font-size: 50px;
-        line-height: 2.2em;
+        font-size: 45pt;
         /*border: 3px solid black;*/
-        padding: 15px;
     }
     
     .hero_text_paragraph {
-        font-size: 36px;
+        font-size: 30pt;
+        text-align: center;
+        width: 70%;
         line-height: 80px;
         padding: 15px;
     }
     
-    .hero_photo {
-        margin: 10px;
-        margin-left: 2.4em;
-        width: 14em;
-        height: 21em;
+    .bodyshot {
+        height: 550px;
+        width: 365px;
     }
     
     .headers {
@@ -341,7 +333,7 @@ footer h2 {
     }
 
     .description {
-        font-size: 28px;
+        font-size: 22pt;
         padding: 15px 30px;
         line-height: 45px;
     }
@@ -353,7 +345,8 @@ footer h2 {
     
     .app_title {
         text-align: center;
-        font-size: 34px;
+        font-size: 34pt;
+        text-decoration: underline;
     }
     
     .app_separater {
@@ -370,117 +363,74 @@ footer h2 {
     }
     
     .app_screenshot {
-        float: right;
-        height: 7em;
-        width: 7em;
-        padding: 0.7em;
+        height: 400px;
+        width: 580px;
+    }
+
+    .app_screenshot:hover {
+        cursor: pointer;
     }
     
     .app_techs {
         display: flex;
         text-align: center;
         width: 100%;
-        font-size: 20px;
-        padding: 1em;
+        font-size: 30pt;
+        padding: none;
     }
     
     footer {
         width: 100%;
-        display: flex;
         justify-content: space-around;
         align-items: center;
         border-radius: 0px;
-        /*background-color: #7C565B;*/
+        border-left: none;
         margin-right: none;
+        height: 80px;
     }
     
     footer h2 {
-        font-size: 20px;
-        padding-left: 10px;
-        /*color: #ebebeb;*/
+        font-size: 30pt;
+        margin: 0px;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1400px) {
     * {
         box-sizing: border-box;
     }
-    
+
     body {
-        display: block;
-        /*background-color: #546F8F;*/
-        font-family: 'Lexend Deca', sans-serif;
-        width: 100%;
-        margin: none;
-        padding: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .nav {
         width: 70%;
-        right: unset;
         margin-left: 15%;
         margin-right: 15%;
-    }
-    
-    main {
-        display: block;
-        /*color: #ebebeb;*/
-        line-height: 20pt;
-        font-size: 12px;
+        border: 10px solid #637c99;
+        border-top: none;
+        border-radius: 0px 0px 20px 20px;
     }
     
     section {
         width: 70%;
         padding: 5px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-right: 15%;
-        margin-left: 15%;
-        /*background-color: #7C565B;*/
-        /*border: 3px solid #637c99;*/
-        box-shadow: 2em;
+        border: 10px solid #637c99;
+        border-radius: 20px;
     }
     
     hr {
-        width: 70%;
+        width: 60%;
         margin-top: 35px;
         margin-bottom: 35px;
-    }
-    
-    .hero {
-        margin-top: 150px;
-        display: flex;
-        padding: 1em;
-    }
-    
-    .hero_text {
-        width: 70%;
-        display: flex;
-        margin: 10px;
-    }
-    
-    .hero_text_name {
-        width: 30%;
-        text-align: center;
-        font-size: 4.5em;
-        line-height: 2.2em;
-        /*border: 3px solid black;*/
-        margin-left: 0.4em;
-    }
-    
-    .hero_text_paragraph {
-        padding: 3px;
-        padding-left: 25px;
-        font-size: 3.8em;
-        width: 65%;
-        line-height: 2em;
-    }
-    
-    .hero_photo {
-        margin: 10px;
-        margin-left: 2.4em;
-        width: 17em;
-        height: 25em;
     }
     
     .headers {
@@ -491,73 +441,19 @@ footer h2 {
         font-size: 4em;
         padding: 0.7em;
     }
-    
-    .bio {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
 
     .description {
-        font-size: 32px;
-        line-height: 60px;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding: 45px;
     }
 
-    .portfolio {
-        display: block;
-        margin-bottom: 40px;
-    }
-    
-    .app_title {
-        text-align: center;
-        font-size: 3.5em;
-    }
-    
-    .app_separater {
-        display: block;
-        margin: 5px;
-        width: 90%;
-    }
-    
-    .app_text {
-        display: flex;
-        font-size: 2.3em;
-        line-height: 2.3em;
-        padding: 1em;
-    }
-    
-    .app_screenshot {
-        float: right;
-        height: 7em;
-        width: 7em;
-        padding: 0.7em;
-    }
-    
-    .app_techs {
-        display: flex;
-        text-align: center;
-        width: 100%;
-        font-size: 30px;
-        padding-left: 65px;
-    }
-    
     footer {
         width: 70%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        /*background-color: #7C565B;*/
-        position: absolute;
-        right: unset;
-        margin-left: 15%;
-        margin-right: 15%;
+        border: 10px solid #637c99;
+        border-bottom: none;
+        border-radius: 20px 20px 0px 0px;
     }
     
     footer h2 {
-        font-size: 2em;
         padding-left: 10px;
-        /*color: #ebebeb;*/
     }
 }
