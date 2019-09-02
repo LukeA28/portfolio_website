@@ -1,6 +1,9 @@
-$(function() {
+function mobileMenuDisplay() {
     $('.hamburger_image').on('click', function(event) {
-        event.preventDefault;
-        $('.menu_view').slideToggle(500);
+        $('nav').toggleClass('hide');
     });
+}
+
+$(function() {
+    mobileMenuDisplay();
 });

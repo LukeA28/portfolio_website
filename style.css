@@ -38,22 +38,21 @@ a {
 }
 
 .hamburger_image {
-    width: 30px;
-    height: 30px;
+    width: 20px;
     padding: none;
     margin: none;
 }
 
-.menu_view {
-    width: 100%;
+.hide {
     display: none;
 }
 
-.nav {
+nav {
     width: 92%;
     position: fixed;
     display: flex;
     align-items: center;
+
     top: 0;
     right: 0;
     background-color: rgba(124,86,91,0.9);
@@ -254,10 +253,14 @@ footer h2 {
     }
 
     .menu_view {
+        display: block;
+    }
+
+    .hide {
         display: flex;
     }
 
-    .nav {
+    nav {
         display: flex;
         width: 100%;
         font-size: 30pt;
@@ -411,7 +414,7 @@ footer h2 {
         align-content: center;
     }
 
-    .nav {
+    nav {
         width: 70%;
         margin-left: 15%;
         margin-right: 15%;
