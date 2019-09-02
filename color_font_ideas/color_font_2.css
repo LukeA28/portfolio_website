@@ -9,7 +9,9 @@ body, html {
 body {
     display: inline-block;
     /*background-color: #546F8F;*/
-    font-family: 'Lexend Deca', sans-serif;
+    background-color: #343434;
+    color: #DFDFDF;
+    font-family: 'Catamaran', sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -22,8 +24,8 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #999999;
     /*background-color: #7C565B;*/
+    background-color: #5F5980;
     padding: 0px 10px;
     margin-top: 0px;
     font-size: 1em;
@@ -36,14 +38,11 @@ button {
     width: 100%;
     margin-top: 3px;
     margin-bottom: 3px;
-}
-
-button > image {
-    background-color: #999999;
+    color:#5F5980;
 }
 
 .menu {
-    background-color: #999999;
+    background-color: #5F5980;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +53,6 @@ button > image {
 .hamburger_image {
     width: 25px;
     height: 25px;
-    background-color: #999999;
 }
 
 .menu_view {
@@ -67,7 +65,7 @@ button > image {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #999999;
+    background-color: #5F5980;
 }
 
 .nav_toggle {
@@ -77,7 +75,7 @@ button > image {
     width: 100%;
     margin: none;
     padding: none;
-    background-color: #999999;
+    background-color: #5F5980;
 }
 
 header:nth-last-child() {
@@ -102,7 +100,7 @@ section {
     margin-bottom: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #777777;
+    background-color: #5F5980;
     /*background-color: rgba(124,86,91,0.9);*/
     /*border: 3px solid #637c99;*/
     box-shadow: 2em;
@@ -201,7 +199,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #999999;
+    background-color: #5F5980;
     /*background-color: #7C565B;*/
     position: absolute;
     right: 0;
