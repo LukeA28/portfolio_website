@@ -73,7 +73,6 @@ nav {
     margin-top: 0px;
     margin-bottom: 0px;
     padding: none;
-    background-color: rgba(124,86,91,0.9);
 }
 
 header:nth-last-child() {
@@ -403,7 +402,7 @@ footer h2 {
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     * {
         box-sizing: border-box;
     }
