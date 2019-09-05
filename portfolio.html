@@ -12,11 +12,11 @@
     <header>
         <img src="./images/hamburger_icon.png" alt="hamburger menu" class="hamburger_image">
     </header>
-        <nav class="nav hide" role="navigation">
+        <nav class="nav hide">
             <ul class="nav_toggle">
-                <li class="menu_item"><a href="#bio"> Bio </a></li>
-                <li class="menu_item"><a href="#portfolio"> Portfolio </a></li>
-                <li class="menu_item"><a href="#contact"> Contact</a></li>
+                <li class="menu_item"><a href="#go_to_bio"> Bio </a></li>
+                <li class="menu_item"><a href="#go_to_portfolio"> Portfolio </a></li>
+                <li class="menu_item"><a href="#go_to_contact"> Contact</a></li>
             </ul>
         </nav>
     <main>
@@ -24,12 +24,12 @@
             <div class="hero_text">
                 <h2 class="hero_text_name">LUKE ALLEN</h2>
                 <div class="hero_photo">
-                    <img src="./images/professional_bodyshot (2).JPG" alt="Photo of me" class="bodyshot">
+                    <img src="./images/professional_bodyshot.jpg" alt="Photo of me" class="bodyshot">
                 </div>
                 <p class="hero_text_paragraph">Hello, I'm Luke, a fullstack web development student & logic buff.</p>
             </div>
         </section>
-        <a name="bio"><hr></a>
+        <hr id="go_to_bio">
         <h2 class="headers">Learn About Me</h2>
         <hr>
         <section class="section bio">
@@ -40,14 +40,14 @@
                     Outside of working with "the code", you can bet that I'm geeking out over professional running, serving in some way with my 
                     church, exercising or paying attention to something hilarious.</p>
         </section>
-        <a name="portfolio"></a><hr></a>
+        <hr id="go_to_portfolio">
         <h2 class="headers">See Some Projects</h2>
         <hr>
         <section class="section portfolio">
-            <h3 class="app_title"><a href="https://github.com/LukeA28/quiz_app" name="quiz app repository">Running Quiz</a></h3>
+            <h3 class="app_title" id="quiz_app_repository"><a href="https://github.com/LukeA28/quiz_app" target="_blank">Running Quiz</a></h3>
             <div class="app_separater">
                 <div class="app_text">
-                    <a href="https://lukea28.github.io/quiz_app/" name="live quiz app">
+                    <a href="https://lukea28.github.io/quiz_app/" id="live_quiz_app" target="_blank">
                         <img src="./images/quiz_app.png" alt="app screenshot" class="app_screenshot">
                     </a>
                     <p class="description">
@@ -58,19 +58,19 @@
                 <hr class="tech_divide">
                 <div class="app_techs">
                     <h4>Tech: </h4>
-                    <img src="./images/html_logo.png" alt="HTML" class="icon tech_icon">
-                    <img src="./images/css_logo.png" alt="CSS" class="icon tech_icon">
-                    <img src="./images/javascript_logo.png" alt="javaScript" class="icon tech_icon">
+                    <img src="./images/html_logo.png" alt="HTML" class="icon tech_icon" id="html_icon">
+                    <img src="./images/css_logo.png" alt="CSS" class="icon tech_icon" id="css_icon">
+                    <img src="./images/javascript_logo.png" alt="javaScript" class="icon tech_icon" id="javaScript_icon">
                     <img src="./images/jquery_logo.png" alt="jQuery" class="icon tech_icon">
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <a name="contact"><h2>Reach Out</h2></a>
-        <a href="mailto:lmallen040@gmail.com" name="email"><img src="./images/gmail_logo.png" alt="Gmail" class="icon"></a>
-        <a href="https://www.linkedin.com/in/luke-m-allen/" name="linked in"><img src="./images/linkedin_logo.png" alt="LinkedIn" class="icon"></a>
-        <a href="https://github.com/LukeA28" name="github"><img src="./images/github_logo.png" alt="Github" class="icon"></a>
+    <footer id="go_to_contact">
+        <h2 class="footer_text">Reach Out</h2>
+        <a href="mailto:lmallen040@gmail.com"><img src="./images/gmail_logo.png" alt="Gmail" class="icon" id="email"></a>
+        <a href="https://www.linkedin.com/in/luke-m-allen/" target="_blank"><img src="./images/linkedin_logo.png" alt="LinkedIn" class="icon" id="linked_in"></a>
+        <a href="https://github.com/LukeA28" target="_blank"><img src="./images/github_logo.png" alt="Github" class="icon" id="github"></a>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="portfolio.js"></script>

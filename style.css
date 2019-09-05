@@ -230,19 +230,35 @@ footer {
 }
 
 footer h2 {
-    font-size: 1em;
+    font-size: 12pt;
     padding-left: 10px;
-    /*color: #ebebeb;*/
+    color: #ebebeb;
 }
 
 .icon {
     width: 35px;
-    height: 35px;
+    height: auto;
     padding-top: 5px;
 }
 
 .icon:hover {
     cursor: pointer;
+}
+
+#html_icon {
+    width: 30px;
+    height: auto;
+}
+
+#css_icon {
+    width: 31px;
+    height: auto;
+    padding-top: 8px;
+}
+
+#javaScript_icon {
+    width: 45px;
+    height: auto;
 }
 
 @media screen and (min-width: 600px) {
@@ -397,8 +413,25 @@ footer h2 {
     }
 
     .icon {
-        height: 50px;
         width: 50px;
+        height: auto;
+    }
+
+    #html_icon {
+        width: 40px;
+        height: auto;
+    }
+    
+    #css_icon {
+        width: 42px;
+        height: auto;
+        padding-top: 6px;
+    }
+    
+    #javaScript_icon {
+        width: 62px;
+        height: auto;
+        padding-bottom: 3px;
     }
 }
 
